@@ -11,6 +11,11 @@ public class BuyUtils {
 	{
 		CommonStep.waitForEnabled("amazon.signin.click", 11);
 		CommonStep.click("amazon.signin.click");
+		CommonStep.sendKeys("radhikag152@gmail.com", "emailPhone.sigin.input");
+		CommonStep.click("login.continue.button");
+		CommonStep.sendKeys("AmazonPassword","login.passwd.input");
+		CommonStep.click("login.signin.button");
+		Thread.sleep(5000);
 		
 	}
 
