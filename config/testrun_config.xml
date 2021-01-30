@@ -26,6 +26,7 @@ For any inquiry or need additional information, please contact support-qaf@infos
 
 <suite name="QAF Demo" verbose="0">
 	 <test name="BDD Test" enabled="true">
+	 	<parameter name ="scenario.file.loc" value ="scenarios/AmazonBuy.feature" />
 		<classes>
 			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory2"></class>
 		</classes>

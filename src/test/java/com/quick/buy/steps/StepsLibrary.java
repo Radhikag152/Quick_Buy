@@ -2,17 +2,18 @@ package com.quick.buy.steps;
 
 import static com.qmetry.qaf.automation.step.CommonStep.sendKeys;
 import  com.quick.buy.utils.BuyUtils;
-
+import static com.qmetry.qaf.automation.step.CommonStep.*;
 import org.openqa.selenium.Keys;
 
+import com.qmetry.qaf.automation.step.CommonStep;
 import com.qmetry.qaf.automation.step.QAFTestStep;
 
 public class StepsLibrary {
 	
 	
-	@QAFTestStep(description = "I login to amazon")
-	public static void login() throws InterruptedException {
-		BuyUtils.login();
-		
+	@QAFTestStep(description = "wait for {0}")
+	public static void waitForMilliseconds(Integer milliseconds) throws InterruptedException {
+		BuyUtils.waitForMilliseconds(milliseconds);
 	}
+		
 }
