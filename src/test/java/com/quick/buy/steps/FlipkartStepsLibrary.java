@@ -13,4 +13,9 @@ public class FlipkartStepsLibrary {
 	public static void loginToFlipkart(String username, String passowrd) throws InterruptedException {
 		FlipkartBuyUtils.login(username, passowrd);		
 	}
+	
+	@QAFTestStep(description = "Order the product {0} from Flipkart")
+	public static void OrderProductInFlipkart(String order) throws InterruptedException {
+		FlipkartBuyUtils.OrderProduct(order);		
+	}
 }
