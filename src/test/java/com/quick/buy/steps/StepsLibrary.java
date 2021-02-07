@@ -15,5 +15,12 @@ public class StepsLibrary {
 	public static void waitForMilliseconds(Integer milliseconds) throws InterruptedException {
 		BuyUtils.waitForMilliseconds(milliseconds);
 	}
+	
+	@QAFTestStep(description = "refresh page till buy button visibile")
+	public static void refreshUntilVisible() throws InterruptedException
+	{
+		BuyUtils.refreshUntilVisible();
+	}
+	
 		
 }
